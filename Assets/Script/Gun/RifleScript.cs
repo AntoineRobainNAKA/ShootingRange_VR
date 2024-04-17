@@ -17,7 +17,7 @@ public class RifleScript : MonoBehaviour
 
     [Range(0, 3000), SerializeField] private float bulletSpeed;
 
-    //[Space, SerializeField] private AudioSource audiosource;
+    [Space, SerializeField] private AudioSource audiosource;
 
     private float lastShot;
 
@@ -30,20 +30,20 @@ public class RifleScript : MonoBehaviour
 
         lastShot = Time.time + shootDelay;
 
-        //GunShotAudio();
+        GunShotAudio();
 
         var bulletPrefab = Instantiate(bullet, bulletPosition.position, bulletPosition.rotation);
         var bulletRB = bulletPrefab.GetComponent<Rigidbody>();
 
         var direction = bulletPrefab.transform.TransformDirection(Vector3.down);
         bulletRB.AddForce(direction * bulletSpeed);
-        ///Destroy(bulletPrefab,5f);
+        Destroy(bulletPrefab,5f);
     }
 
-    //private void GunShotAudio()
-    //{
-    //    var random = Random.Range(0.0f, 1.2f);
-    //    audiosource.pitch = random;
-    //    audiosource.Play();
-    //}
+    private void GunShotAudio()
+    {
+        var random = Random.Range(0.0f, 1.2f);
+        audiosource.pitch = random;
+        audiosource.Play();
+    }
 }

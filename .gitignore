@@ -74,4 +74,5 @@ crashlytics-build.properties
 
 .DS_*
 *DoNotShip
-.idea
+
+.idea/

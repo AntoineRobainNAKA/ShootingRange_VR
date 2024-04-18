@@ -25,7 +25,7 @@ public class SpawnerCible : MonoBehaviour
         {
             NextSpawn = Time.time + SpawnRate;
             GameObject GO = Instantiate(PrefabToSpawn,transform.position,Quaternion.identity) as GameObject;
-            GO.Name = "Cible";
+            GO.name = "Cible";
             Nr++;
             Nt++;
         }

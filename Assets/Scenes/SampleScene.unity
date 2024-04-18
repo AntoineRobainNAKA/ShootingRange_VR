@@ -387,7 +387,7 @@ MonoBehaviour:
   audiosourceFiresound: {fileID: 7931135121177237671}
   audiosourceNoAmmosound: {fileID: 7931135121177237672}
   destroyTimer: 2
-  shotPower: 700
+  shotPower: 1200
   ejectPower: 250
 --- !u!1 &368055631
 GameObject:
@@ -1008,7 +1008,7 @@ MonoBehaviour:
   audiosourceFiresound: {fileID: 772507680}
   audiosourceNoAmmosound: {fileID: 772507679}
   destroyTimer: 2
-  shotPower: 700
+  shotPower: 1200
   ejectPower: 250
 --- !u!82 &772507679
 AudioSource:
@@ -3340,7 +3340,7 @@ PrefabInstance:
     - target: {fileID: 1910014629993435223, guid: 785c7b7cc2b7b6941ae534538036d566,
         type: 3}
       propertyPath: bulletSpeed
-      value: 1500
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 3437115555940227189, guid: 785c7b7cc2b7b6941ae534538036d566,
         type: 3}

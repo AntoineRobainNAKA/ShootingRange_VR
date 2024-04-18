@@ -8,12 +8,11 @@ public class SpawnerCible : MonoBehaviour
     public Transform Player;
     public GameObject PrefabToSpawn;
     public float SpawnRate = 4f;
-    public int MaxSpawn = 20;
+    public int MaxSpawn = 100;
     private float NextSpawn;
     private int Nr = 0;
     
     private int Nb;
-
     private int Nt;
 
     public bool Respawn;
@@ -21,7 +20,7 @@ public class SpawnerCible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > NextSpawn && Nr<MaxSpawn && Nt<20)
+        if(Time.time > NextSpawn && Nr<MaxSpawn)
         {
             NextSpawn = Time.time + SpawnRate;
             GameObject GO = Instantiate(PrefabToSpawn,transform.position,Quaternion.identity) as GameObject;
@@ -42,10 +41,7 @@ public class SpawnerCible : MonoBehaviour
                 }
             }
 
-            if(Nb<MaxSpawn)
-            {
-                Nr = Nb;
-            }
+         
         }
     }
 }

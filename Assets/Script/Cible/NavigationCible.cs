@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class NavigationCible : MonoBehaviour
 {
 
-    public Transform player;
+    public GameObject player;
     private NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,6 @@ public class NavigationCible : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.destination = player.position;
+        agent.destination = player.transform.position;
     }
 }

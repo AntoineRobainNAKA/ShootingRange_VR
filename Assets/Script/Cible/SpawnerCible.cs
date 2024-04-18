@@ -8,7 +8,7 @@ public class SpawnerCible : MonoBehaviour
     public Transform Player;
     public GameObject PrefabToSpawn;
     public float SpawnRate = 4f;
-    public int MaxSpawn = 3;
+    public int MaxSpawn = 20;
     private float NextSpawn;
     private int Nr = 0;
     

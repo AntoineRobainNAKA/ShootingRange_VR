@@ -7,6 +7,8 @@ TagManager:
   - Gun
   - Bullet
   - Magazine
+  - cibleEnd
+  - Cible
   layers:
   - Default
   - TransparentFX
